@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{k+kn}{from}\PYG{+w}{ }\PYG{n+nn}{quran\PYGZus{}transcript}\PYG{+w}{ }\PYG{k+kn}{import} \PYG{n}{search}\PYG{p}{,} \PYG{n}{Aya}
+
+\PYG{n}{imlaey\PYGZus{}text} \PYG{o}{=} \PYG{esc}{\pythonarb{فأخرج به من الثمرات رزقا لكم}}
+\PYG{n}{results} \PYG{o}{=} \PYG{n}{search}\PYG{p}{(}
+    \PYG{n}{imlaey\PYGZus{}text}\PYG{p}{,}
+    \PYG{n}{start\PYGZus{}aya}\PYG{o}{=}\PYG{n}{Aya}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{13}\PYG{p}{)}\PYG{p}{,}
+    \PYG{n}{window}\PYG{o}{=}\PYG{l+m+mi}{20}\PYG{p}{,}
+    \PYG{n}{remove\PYGZus{}tashkeel}\PYG{o}{=}\PYG{k+kc}{True}
+\PYG{p}{)}
+
+\PYG{n}{uthmani\PYGZus{}script} \PYG{o}{=} \PYG{n}{results}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{uthmani\PYGZus{}script}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{uthmani\PYGZus{}script}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Output: \pythonarb{فَأَخْرَجَ بِهِۦ مِنَ ٱلثَّمَرَٰتِ رِزْقًۭا لَّكُمْ}}
+\end{Verbatim}

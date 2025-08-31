@@ -566,3 +566,334 @@ To capture this variability, each Moshaf in our dataset is accompanied by a `Mos
   \item More Info: This is not a \textbf{standard} Hafs way but a disagreement between \textbf{scholars} in our century on how to \textbf{pronounce} \textbf{Ikhfa} for meem. Some \textbf{scholars} do full merging (\arb{إدغام}) and the others open the \textbf{lips} a little bit (\arb{إخفاء}). We did not want to add this, but some of the best reciters disagree about this.
   \end{itemize}
 \end{itemize}
+
+
+% --------------------------------------------------------------------------
+
+\section{Collection of Expert Recitations}
+
+Recitations were collected from 22 world-class reciters, amounting to a total of \textbf{893 hours} of audio before filtering. The collection process prioritized premium audio quality.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/stats.png}
+\caption{Overview statistics of the collected audio database.}
+\label{fig:stats}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{./figures/reciter.png}
+\caption{Total duration of collected recitations, broken down by individual reciter.}
+\label{fig:reciter}
+\end{figure}
+
+To facilitate this collection, a web GUI was developed using Streamlit\footnote{https://streamlit.io/}. This application performs the following tasks:
+\begin{itemize}
+\item Downloads audio tracks and extracts their metadata.
+\item Organizes the data by Moshaf, with each chapter saved as a separate file (e.g., `001.mp3`).
+\item Provides an interface for annotating Moshaf attribute cards.
+\end{itemize}
+
+\subsection{Running the Collection Application}
+
+\subsubsection{Cloning the Repository}
+The application source code can be obtained by cloning the Git repository:
+\begin{lstlisting}[language=bash]
+git clone https://github.com/obadx/prepare-quran-dataset
+\end{lstlisting}
+
+\subsubsection{Installing `uv`}
+The project uses `uv` for dependency management. It can be installed via `pip`:
+\begin{lstlisting}[language=bash]
+pip install uv
+\end{lstlisting}
+Alternatively, it can be installed directly from the official installer:
+\begin{lstlisting}[language=bash]
+curl -LsSf https://astral.sh/uv/install.sh | sh
+\end{lstlisting}
+
+\subsubsection{Installing Project Dependencies}
+Navigate to the project directory and sync the dependencies, including those for annotation:
+\begin{lstlisting}[language=bash]
+cd prepare-quran-dataset
+uv sync --extra annotate
+\end{lstlisting}
+
+\subsubsection{Installing Frontend Dependencies}
+The frontend has additional requirements. Navigate to its directory and install them:
+\begin{lstlisting}[language=bash]
+cd frontend
+uv pip install -r requirements.txt
+\end{lstlisting}
+
+\subsubsection{Launching the Frontend Application}
+With dependencies installed, the Streamlit application can be launched from the `frontend` directory:
+\begin{lstlisting}[language=bash]
+streamlit run streamlit_app.py
+\end{lstlisting}
+
+\subsection{UI Snapshots}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/ui_main_page.png}
+\caption{The main page of the custom annotation platform.}
+\label{fig:ui_main}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/ui_veiw_reciters.png}
+\caption{The reciter management view within the application.}
+\label{fig:ui_reciters}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/ui_veiw_all_moshaf.png}
+\caption{View displaying all available Masahif in the database.}
+\label{fig:ui_masahif}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/ui_insert_new_reciter.png}
+\caption{Dialog for inserting a new reciter's details.}
+\label{fig:ui_new_reciter}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/ui_inset_new_mohaf.png}
+\caption{Dialog for creating and annotating a new Moshaf attribute card.}
+\label{fig:ui_new_moshaf}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/ui_play_recitatins.png}
+\caption{Interface for viewing a Moshaf's tracks and playing individual recitations.}
+\label{fig:ui_play}
+\end{figure}
+
+
+
+
+
+
+% --------------------------------------------------------
+
+
+
+\section{Segmentation of Recitations}
+
+Accurate segmentation is a critical preprocessing step, as Tajweed rules are directly influenced by pause points (\arb{وقف}). To address this, we initially evaluated open-source Voice Activity Detection (VAD) models, including SileroVAD \cite{SileroVAD} and PyAnnotate \cite{Plaquet23}. However, their performance on Quranic recitations was unsatisfactory due to the unique acoustic and prosodic characteristics of Tilawah.
+
+Consequently, we developed a custom segmentation model by fine-tuning the Wav2Vec2-BERT architecture \cite{barrault2023seamless} for frame-level classification, specifically optimized for Quranic audio.
+
+\subsection{Preparation of Segmenter Training Data}
+
+To create a training dataset, we selected \arb{مصاحف} from the EveryAyah\footnote{https://everyayah.com} database that were compatible with SileroVAD v4. This source provided pre-segmented recitations at the verse (ayah) level, which served as our ground truth.
+
+For each Moshaf, we tuned the following segmentation parameters to optimize alignment with the ground truth:
+\begin{itemize}
+\item \textbf{Threshold:} Detection confidence level.
+\item \textbf{Minimum Silence Duration:} Durations below this value trigger segment merging.
+\item \textbf{Minimum Speech Duration:} Segments shorter than this value are discarded.
+\item \textbf{Padding:} Duration added to the beginning and end of each detected segment.
+\end{itemize}
+
+The resulting dataset, comprising eight complete \arb{مصاحف}, is summarized in Table \ref{tab:segmenter_data}.
+
+\begin{longtable}{|p{4cm}|c|c|c|c|c|c|}
+\caption{Dataset used for training the custom segmenter, consisting of eight complete Masahif with tuned parameters.}
+\label{tab:segmenter_data}\\
+\hline
+\textbf{Reciter Name (Arabic)} & \textbf{ID} & \textbf{Window Size (Samples)} & \textbf{Threshold} & \textbf{Min Silence (ms)} & \textbf{Min Speech (ms)} & \textbf{Pad (ms)} \\ 
+\hline
+\endfirsthead
+\hline
+\arb{محمود خليل الحصري} & 0 & 1536 & 0.3 & 500 & 1000 & 40 \\
+\hline
+\arb{محمد صديق المنشاوي} & 1 & 1536 & 0.3 & 400 & 1000 & 20 \\
+\hline
+\arb{عبد الباسط عبد الصمد} & 2 & 1536 & 0.3 & 400 & 700 & 20 \\
+\hline
+\arb{محمود علي البنا} & 3 & 1536 & 0.3 & 400 & 700 & 20 \\
+\hline
+\arb{على الحذيفي} & 5 & 1536 & 0.3 & 350 & 700 & 5 \\
+\hline
+\arb{أيمن رشدي سويد} & 6 & 1536 & 0.3 & 500 & 1000 & 10 \\
+\hline
+\arb{محمد أيوب} & 7 & 1536 & 0.3 & 400 & 1000 & 10 \\
+\hline
+\arb{إبراهيم الأخضر} & 8 & 1536 & 0.3 & 390 & 700 & 30 \\
+\hline
+\end{longtable}
+
+\subsubsection{Data Augmentation}
+
+To improve model robustness and generalize across various recording conditions, we employed data augmentation using the Audiomentations library. The augmentation strategy replicated SileroVAD's noise profile and was applied to 40\% of the samples. With additional:
+\begin{itemize}
+\item \texttt{TimeStretch} (0.8x-1.5x) to simulate recitation speeds
+\item Sliding window truncation (1-second windows) for long samples instead of exclusion
+\end{itemize}
+
+\subsection{Segmenter Training}
+
+The Wav2Vec2BERT model was fine-tuned for frame-level classification over a single epoch. The architecture of our VAD model compared to standard streaming models is illustrated in the figure below.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/vad-arch.png}
+\caption{Architecture of the fine-tuned Wav2Vec2-BERT model for frame classification, compared to a standard streaming model.}
+\label{fig:vad_arch}
+\end{figure}
+
+The model's performance on unseen \arb{مصاحف} demonstrated high accuracy, as shown in Table \ref{tab:vad_results}.
+
+\begin{longtable}{|l|c|}
+\caption{Evaluation results of the segmentation model on a held-out test set of Masahif, showing superior performance. The quality of the segmenter was validated by processing our entire dataset, where it maintained this high level of performance. The only exceptions were edge cases involving extremely fast recitation (\arb{حدر}), which is an expected limitation.}
+\label{tab:vad_results}\\
+\hline
+\textbf{Metric} & \textbf{Value} \\ 
+\hline
+\endfirsthead
+\hline
+Test Loss & 0.0277 \\
+\hline
+Test Accuracy & 0.9935 \\
+\hline
+Test F1 Score & 0.99476 \\
+\hline
+\end{longtable}
+
+
+
+
+
+
+% --------------------------------------------------------------------
+
+\section{Transcribe Segmented Parts}
+
+We employed Tarteel ASR \cite{tarteel_whisper_ar_quran} (Whisper fine-tuned on Quranic recitations \cite{radford2023robust}). To handle its 30-second limit, we used sliding window truncation (10-second windows), with verification in the next step. We used vlLM library because it is really fast thanks to Employing Paged Attention \cite{kwon2023efficient}.
+
+
+
+
+
+% ------------------------------------------------------------------------
+
+
+
+
+
+\section{Verification of Segmentation and Transcription}
+\section{Data Verification}
+
+To ensure the highest quality of our dataset, we developed a custom verification interface using Streamlit\footnote{https://streamlit.io/}. We manually inspect 50-75 randomly selected samples per Moshaf, focusing on the following aspects:
+
+\begin{itemize}
+\item \textbf{Segmentation Quality:} Assessing the accuracy of pause detection to determine if adjustments were needed, including:
+\begin{itemize}
+    \item Increasing or decreasing padding durations
+    \item Merging adjacent segments
+    \item Splitting undetected segments
+\end{itemize}
+\item \textbf{Qalqala (\arb{القلقلة}) Duration Inspection:} Verifying that segments containing Qalqala (\arb{قلقة}) are fully captured without being truncated by brief silences, ensuring the acoustic feature remains intact.
+\item \textbf{Hams (\arb{همس}) Duration Inspection:} Similarly checking segments for Hams (a whispered or airy phonation) to ensure the subtle release of air was not missed by the segmenter.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/data_verfication_ui.png}
+\caption{The Streamlit-based UI for manually verifying segmentation quality and phonetic feature integrity.}
+\label{fig:verification_ui}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{../figures/data_annotation_ui_editing.png}
+\caption{The editing view within the verification UI, allowing for manual correction of segment boundaries.}
+\label{fig:annotation_ui}
+\end{figure}
+
+After completing the annotation process for a Moshaf, the defined correction operations were programmatically applied to the entire dataset to ensure consistency.
+
+\textbf{Note:} Moshaf 25.0 was excluded from the final dataset due to irreconcilably poor segmentation quality.
+
+\subsection{Transcription Verification: A \arb{تسميع}-Inspired Algorithm}
+
+To validate the accuracy of the automated speech recognition (ASR) output, we developed a verification algorithm inspired by Tasmeea (\arb{تسميع})—the traditional practice where a student recites for a teacher to correct mistakes. This statistical algorithm operates under the core assumption that the input recitations are 100\% correct, and any errors originate from the ASR model (Tarteel model).
+
+The algorithm proceeds through the following steps:
+\begin{enumerate}
+\item \textbf{Automatic Matching:} Segments are automatically matched to the canonical Quranic text.
+\item \textbf{Discrepancy Identification:} The system identifies missing verses, words, or unexpected additions in the transcription.
+\item \textbf{Manual Correction:} flagged discrepancies are presented for manual review and correction within our annotation UI, completing the \arb{تسميع} feedback loop.
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{algorithm}[H]
+\caption{Tasmeea Algorithm}
+\label{alg:tasmeea}
+\begin{algorithmic}[1]
+\REQUIRE $text\_segments = [s_1, s_2, \dots, s_n]$, $sura\_idx$, 
+          $overlap\_words = 6$, $window\_words = 30$, 
+          $acceptance\_ratio = 0.5$, flags for special phrases
+\ENSURE List of tuples $(match, ratio)$ per segment
+
+\STATE $aya \leftarrow 1$ \COMMENT{Start at first verse}
+\STATE $penalty \leftarrow 0$
+\FOR{each segment $s_i$ in $text\_segments$}
+    \STATE $norm\_text \leftarrow$ normalize($s_i$) \COMMENT{Remove spaces/diacritics}
+    \STATE $min\_win \leftarrow window\_words - 10$, $max\_win \leftarrow window\_words + 10$
+    \STATE $start\_range \leftarrow [-(overlap + penalty), (overlap + \max(window\_words, max\_win) + penalty]$
+    
+    \IF{first segment \AND $include\_istiaatha$}
+        \STATE Check istiaatha special case
+    \ELSIF{last segment \AND $include\_sadaka$}
+        \STATE Check sadaka special case
+    \ENDIF
+    
+    \STATE $best\_ratio \leftarrow 0$, $best\_match \leftarrow \text{null}$
+    \FOR{each start position $p$ in $start\_range$}
+        \FOR{each window size $w \in [min\_win, max\_win]$}
+            \STATE $c \leftarrow$ extract candidate at ($aya$, $p$, $w$)
+            \STATE $dist \leftarrow \text{edit\_distance}(norm\_text, c)$
+            \STATE $ratio \leftarrow 1 - \min(dist, |norm\_text|) / |norm\_text|$
+            \IF{$ratio > best\_ratio$ \OR ($ratio = best\_ratio$ \AND $|p| < |best\_start|$)}
+                \STATE update $best\_ratio$, $best\_match$, $best\_start$, $best\_window$
+            \ENDIF
+        \ENDFOR
+    \ENDFOR
+    
+    \IF{$best\_ratio < acceptance\_ratio$}
+        \STATE output (null, $best\_ratio$)
+        \STATE $penalty \leftarrow max\_win$
+        \STATE $aya \leftarrow aya + 1$ \COMMENT{Default advance}
+    \ELSE
+        \STATE output ($best\_match$, $best\_ratio$)
+        \STATE $aya \leftarrow aya + best\_start + best\_window$
+        \STATE $penalty \leftarrow 0$
+    \ENDIF
+\ENDFOR
+\STATE \textbf{Complexity:} $O(N \cdot W \cdot L^2)$ \COMMENT{$N$=segments, $W$=window size, $L$=segment length}
+\end{algorithmic}
+\end{algorithm}

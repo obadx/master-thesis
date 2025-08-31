@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: unsrtnat.bst
+Database file #1: Bibliography.bib
+Warning--entry type for "tarteelai" isn't style-file defined
+--line 251 of file Bibliography.bib
+You're missing a field name---line 256 of file Bibliography.bib
+ :   urldate = {2023-11-15}, 
+ :                           % Replace with the date you accessed the site
+I'm skipping whatever remains of this entry
+Warning--empty booktitle in sherif2007enhancing
+Warning--empty journal in khan2021tarteel
+Warning--can't use both author and editor fields in ibnaljazri_alnashr
+Warning--empty year in ibnaljazri_alnashr
+Warning--empty year in ibnaljazri_alnashr
+Warning--can't use both author and editor fields in AlJazariyyahSwaid
+Warning--empty publisher in AlJazariyyahSwaid
+Warning--empty year in AlJazariyyahSwaid
+Warning--empty year in AlJazariyyahSwaid
+You've used 39 entries,
+            2481 wiz_defined-function locations,
+            782 strings with 13503 characters,
+and the built_in function-call counts, 16583 in all, are:
+= -- 1343
+> -- 961
+< -- 28
++ -- 367
+- -- 288
+* -- 1232
+:= -- 2607
+add.period$ -- 131
+call.type$ -- 39
+change.case$ -- 74
+chr.to.int$ -- 38
+cite$ -- 48
+duplicate$ -- 855
+empty$ -- 1479
+format.name$ -- 341
+if$ -- 3583
+int.to.chr$ -- 2
+int.to.str$ -- 40
+missing$ -- 40
+newline$ -- 210
+num.names$ -- 117
+pop$ -- 400
+preamble$ -- 1
+purify$ -- 39
+quote$ -- 0
+skip$ -- 536
+stack$ -- 0
+substring$ -- 668
+swap$ -- 197
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 258
+warning$ -- 9
+while$ -- 126
+width$ -- 0
+write$ -- 515
+(There was 1 error message)

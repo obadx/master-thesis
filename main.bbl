@@ -1,0 +1,284 @@
+\begin{thebibliography}{39}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abdou and Rashwan(2014)]{abdou2014computer}
+Sherif~Mahdy Abdou and Mohsen Rashwan.
+\newblock A computer aided pronunciation learning system for teaching the holy
+  quran recitation rules.
+\newblock In \emph{2014 IEEE/ACS 11th International Conference on Computer
+  Systems and Applications (AICCSA)}, pages 543--550. IEEE, 2014.
+
+\bibitem[Al-Marri et~al.(2018)Al-Marri, Raafat, Abdallah, Abdou, and
+  Rashwan]{al2018computer}
+Mubarak Al-Marri, Hazem Raafat, Mustafa Abdallah, Sherif Abdou, and Mohsen
+  Rashwan.
+\newblock Computer aided qur’an pronunciation using dnn.
+\newblock \emph{Journal of Intelligent \& Fuzzy Systems}, 34\penalty0
+  (5):\penalty0 3257--3271, 2018.
+
+\bibitem[Ahmed and Ghabayen(2017)]{ahmed2017arabic}
+Basem~HA Ahmed and Ayman~S Ghabayen.
+\newblock Arabic automatic speech recognition enhancement.
+\newblock In \emph{2017 Palestinian International Conference on Information and
+  Communication Technology (PICICT)}, pages 98--102. IEEE, 2017.
+
+\bibitem[Kheir et~al.(2023)Kheir, Ali, and Chowdhury]{kheir2023automatic}
+Yassine~El Kheir, Ahmed Ali, and Shammur~Absar Chowdhury.
+\newblock Automatic pronunciation assessment--a review.
+\newblock \emph{arXiv preprint arXiv:2310.13974}, 2023.
+
+\bibitem[Sherif et~al.(2007)Sherif, Samir, Khalil, and
+  Mohsen]{sherif2007enhancing}
+MA~Sherif, A~Samir, AH~Khalil, and R~Mohsen.
+\newblock Enhancing usability of capl system for quran recitation learning.
+\newblock INTERSPEECH, 2007.
+
+\bibitem[Osman et~al.(2021)Osman, Mustafa, and Faisal]{osman2021qdat}
+Hanaa~Mohammed Osman, Ban~Sharief Mustafa, and Yusra Faisal.
+\newblock Qdat: a data set for reciting the quran.
+\newblock \emph{International Journal on Islamic Applications in Computer
+  Science And Technology}, 9\penalty0 (1):\penalty0 1--9, 2021.
+
+\bibitem[Omran et~al.(2023{\natexlab{a}})Omran, Fawzi, and Kandil]{10092350}
+Dahlia Omran, Sahar Fawzi, and Ahmed Kandil.
+\newblock Automatic detection of some tajweed rules.
+\newblock In \emph{2023 20th Learning and Technology Conference (L&T)}, pages
+  157--160, 2023{\natexlab{a}}.
+\newblock \doi{10.1109/LT58159.2023.10092350}.
+
+\bibitem[Shaiakhmetov et~al.(2025)Shaiakhmetov, Gimaletdinova, Momunov, and
+  Cankurt]{shaiakhmetov2025evaluation}
+Dim Shaiakhmetov, Gulnaz Gimaletdinova, Kadyrmamat Momunov, and Selcuk Cankurt.
+\newblock Evaluation of the pronunciation of tajweed rules based on dnn as a
+  step towards interactive recitation learning.
+\newblock \emph{arXiv preprint arXiv:2503.23470}, 2025.
+
+\bibitem[Khan et~al.(2021)Khan, Abid, Moussa, and
+  Abou-Allaban]{khan2021tarteel}
+Hamzah~I Khan, Abubakar Abid, Mohamed~Medhat Moussa, and Anas Abou-Allaban.
+\newblock The tarteel dataset: crowd-sourced and labeled quranic recitation.
+\newblock 2021.
+
+\bibitem[{Tarteel AI}(2023)]{tarteelai}
+{Tarteel AI}.
+\newblock Tarteel: Ai-powered quran companion, 2023.
+\newblock URL \url{https://www.tarteel.ai/}.
+
+\bibitem[Kheir et~al.(2025)Kheir, Ibrahim, Meghanani, Almarwani, Toyin,
+  Alharbi, Alfadly, Alkanhal, Selim, Elbatal, et~al.]{kheir2025towards}
+Yassine~El Kheir, Omnia Ibrahim, Amit Meghanani, Nada Almarwani, Hawau~Olamide
+  Toyin, Sadeen Alharbi, Modar Alfadly, Lamya Alkanhal, Ibrahim Selim, Shehab
+  Elbatal, et~al.
+\newblock Towards a unified benchmark for arabic pronunciation assessment:
+  Quranic recitation as case study.
+\newblock \emph{arXiv preprint arXiv:2506.07722}, 2025.
+
+\bibitem[Mohammed et~al.(2017)Mohammed, Sunar, and
+  Salam]{mohammed2017recognition}
+Ammar Mohammed, Mohd Shahrizal~Bin Sunar, and Md~Sah~Hj Salam.
+\newblock Recognition of holy quran recitation rules using phoneme duration.
+\newblock In \emph{International Conference of Reliable Information and
+  Communication Technology}, pages 343--352. Springer, 2017.
+
+\bibitem[Alqadasi et~al.(2023)Alqadasi, Zeki, Sunar, Salam, Abdulghafor, and
+  Khaled]{alqadasi2023improving}
+Ammar Mohammed~Ali Alqadasi, Akram~M Zeki, Mohd~Shahrizal Sunar, Md~Sah Bin~Hj
+  Salam, Rawad Abdulghafor, and Nashwan~Abdo Khaled.
+\newblock Improving automatic forced alignment for phoneme segmentation in
+  quranic recitation.
+\newblock \emph{IEEE Access}, 12:\penalty0 229--244, 2023.
+
+\bibitem[Alsahafi and Asad(2024)]{10485145}
+Yousef~S Alsahafi and Muhammad Asad.
+\newblock Empirical study on mispronunciation detection for tajweed rules
+  during quran recitation.
+\newblock In \emph{2024 6th International Conference on Computing and
+  Informatics (ICCI)}, pages 39--45, 2024.
+\newblock \doi{10.1109/ICCI61671.2024.10485145}.
+
+\bibitem[Putra et~al.(2012)Putra, Atmaja, and Prananto]{putra2012developing}
+Budiman Putra, B~Tris Atmaja, and D~Prananto.
+\newblock Developing speech recognition system for quranic verse recitation
+  learning software.
+\newblock \emph{IJID (International Journal on Informatics for Development)},
+  1\penalty0 (2):\penalty0 1--8, 2012.
+
+\bibitem[Hinton and Salakhutdinov(2006)]{hinton2006reducing}
+Geoffrey~E Hinton and Ruslan~R Salakhutdinov.
+\newblock Reducing the dimensionality of data with neural networks.
+\newblock \emph{science}, 313\penalty0 (5786):\penalty0 504--507, 2006.
+
+\bibitem[Hopfield(1982)]{hopfield1982neural}
+John~J Hopfield.
+\newblock Neural networks and physical systems with emergent collective
+  computational abilities.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 79\penalty0
+  (8):\penalty0 2554--2558, 1982.
+
+\bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
+  Kaiser, and Polosukhin]{vaswani2017attention}
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
+  Aidan~N Gomez, {\L}ukasz Kaiser, and Illia Polosukhin.
+\newblock Attention is all you need.
+\newblock \emph{Advances in Neural Information Processing Systems},
+  30:\penalty0 5998--6008, 2017.
+
+\bibitem[Devlin et~al.(2019)Devlin, Chang, Lee, and Toutanova]{devlin2019bert}
+Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova.
+\newblock Bert: Pre-training of deep bidirectional transformers for language
+  understanding.
+\newblock \emph{Proceedings of the North American Chapter of the Association
+  for Computational Linguistics: Human Language Technologies (NAACL-HLT)},
+  pages 4171--4186, 2019.
+
+\bibitem[Schneider et~al.(2019)Schneider, Baevski, Collobert, and
+  Auli]{schneider2019wav2vec}
+Steffen Schneider, Alexei Baevski, Ronan Collobert, and Michael Auli.
+\newblock wav2vec: Unsupervised pre-training for speech recognition.
+\newblock \emph{arXiv preprint arXiv:1904.05862}, 2019.
+
+\bibitem[Baevski et~al.(2020)Baevski, Zhou, Mohamed, and
+  Auli]{baevski2020wav2vec}
+Alexei Baevski, Yuhao Zhou, Abdelrahman Mohamed, and Michael Auli.
+\newblock wav2vec 2.0: A framework for self-supervised learning of speech
+  representations.
+\newblock \emph{Advances in neural information processing systems},
+  33:\penalty0 12449--12460, 2020.
+
+\bibitem[Gulati et~al.(2020)Gulati, Qin, Chiu, Parmar, Zhang, Yu, Han, Wang,
+  Zhang, Wu, et~al.]{gulati2020conformer}
+Anmol Gulati, James Qin, Chung-Cheng Chiu, Niki Parmar, Yu~Zhang, Jiahui Yu,
+  Wei Han, Shibo Wang, Zhengdong Zhang, Yonghui Wu, et~al.
+\newblock Conformer: Convolution-augmented transformer for speech recognition.
+\newblock \emph{arXiv preprint arXiv:2005.08100}, 2020.
+
+\bibitem[Chung et~al.(2021)Chung, Zhang, Han, Chiu, Qin, Pang, and
+  Wu]{chung2021w2v}
+Yu-An Chung, Yu~Zhang, Wei Han, Chung-Cheng Chiu, James Qin, Ruoming Pang, and
+  Yonghui Wu.
+\newblock W2v-bert: Combining contrastive learning and masked language modeling
+  for self-supervised speech pre-training.
+\newblock In \emph{2021 IEEE Automatic Speech Recognition and Understanding
+  Workshop (ASRU)}, pages 244--250. IEEE, 2021.
+
+\bibitem[Barrault et~al.(2023)Barrault, Chung, Meglioli, Dale, Dong,
+  Duppenthaler, Duquenne, Ellis, Elsahar, Haaheim,
+  et~al.]{barrault2023seamless}
+Lo{\"\i}c Barrault, Yu-An Chung, Mariano~Coria Meglioli, David Dale, Ning Dong,
+  Mark Duppenthaler, Paul-Ambroise Duquenne, Brian Ellis, Hady Elsahar, Justin
+  Haaheim, et~al.
+\newblock Seamless: Multilingual expressive and streaming speech translation.
+\newblock \emph{arXiv preprint arXiv:2312.05187}, 2023.
+
+\bibitem[Omran et~al.(2023{\natexlab{b}})Omran, Fawzi, and
+  Kandil]{omran2023automatic}
+Dahlia Omran, Sahar Fawzi, and Ahmed Kandil.
+\newblock Automatic detection of some tajweed rules.
+\newblock In \emph{2023 20th Learning and Technology Conference (L\&T)}, pages
+  157--160. IEEE, 2023{\natexlab{b}}.
+
+\bibitem[\arb{هبيرة, عز}(2023)]{article-khalil}
+\arb{هبيرة, عز}.
+\newblock \arb{مخارج الحروف الصحاح وصفاتها عند
+  الخليل بن أحمد الفراهيدي قراءة في ضوء
+  الدرس اللساني الحديث.}
+\newblock \emph{\arb{مجلة جامعة الأمير عبد القادر
+  للعلوم الإسلامية}}, 31:\penalty0 165--190, 02 2023.
+\newblock \doi{10.37138/emirj.v31i2.1936}.
+
+\bibitem[\arb{أمين رشدس سويد}(2021)]{sweed2021}
+\arb{أمين رشدس سويد}.
+\newblock \emph{\arb{التجويد المصور}}.
+\newblock \arb{دار الغوثاني للدراسات القرآنية},
+  2021.
+
+\bibitem[\arb{ابن الجزري، محمد بن
+  محمد}()]{ibnaljazri_alnashr}
+\arb{ابن الجزري، محمد بن محمد}.
+\newblock \emph{\arb{النشر في القراءات العشر}}.
+\newblock \arb{المطبعة التجارية الكبرى},
+  \arb{القاهرة}.
+\newblock \arb{تصوير دار الكتاب العلمية}.
+
+\bibitem[Dukes and Habash(2010)]{dukes2010morphological}
+Kais Dukes and Nizar Habash.
+\newblock Morphological annotation of quranic arabic.
+\newblock In \emph{Lrec}, pages 2530--2536, 2010.
+
+\bibitem[{\arb{غانم القدوري حمد}}({2008})]{AlHamad2008}
+{\arb{غانم القدوري حمد}}.
+\newblock \emph{{\arb{شَرح المقدمة الجزرية: يَجْمَعَ
+  بَيْنَ التُّراثِ الصَّوْتي العربي
+  القَدِيمِ وَالدَّرْسِ الصوتي الحديث}}}.
+\newblock {\arb{معهد الإمام الشاطبي}}, {\arb{الطبعة
+  الأولى}} edition, {2008}.
+
+\bibitem[\arb{ابن الجزري, شمس الدين}()]{AlJazariyyahSwaid}
+\arb{ابن الجزري, شمس الدين}.
+\newblock \emph{\arb{المقدمة الجزرية}}.
+\newblock \arb{تحقيق وتعليق}.
+
+\bibitem[{\arb{علي الضباع}}({\arb{1380هـ"}})]{al-dabbaa}
+{\arb{علي الضباع}}.
+\newblock \emph{{\arb{صريح النص في الكلمات المختلف
+  فيها عن حفص}}}.
+\newblock {\arb{مكتبة ومطبعة مصطفى البابي الحلبي
+  وأولاده}}, {\arb{1380هـ"}}.
+\newblock {\arb{المؤلف: علي الضباع (توفي 1380هـ)}}.
+
+\bibitem[SileroVAD(2024)]{SileroVAD}
+SileroVAD.
+\newblock Silero vad: pre-trained enterprise-grade voice activity detector
+  (vad), number detector and language classifier.
+\newblock \url{https://github.com/snakers4/silero-vad}, 2024.
+
+\bibitem[Plaquet and Bredin(2023)]{Plaquet23}
+Alexis Plaquet and Hervé Bredin.
+\newblock {Powerset multi-class cross entropy loss for neural speaker
+  diarization}.
+\newblock In \emph{Proc. INTERSPEECH 2023}, 2023.
+
+\bibitem[AI(2023)]{tarteel_whisper_ar_quran}
+Tarteel AI.
+\newblock Whisper base arabic quran (automatic speech recognition for quranic
+  recitation).
+\newblock \url{https://huggingface.co/tarteel-ai/whisper-base-ar-quran}, 2023.
+\newblock Model by Tarteel AI. Company website: \url{https://www.tarteel.ai/}.
+
+\bibitem[Radford et~al.(2023)Radford, Kim, Xu, Brockman, McLeavey, and
+  Sutskever]{radford2023robust}
+Alec Radford, Jong~Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and
+  Ilya Sutskever.
+\newblock Robust speech recognition via large-scale weak supervision.
+\newblock In \emph{International conference on machine learning}, pages
+  28492--28518. PMLR, 2023.
+
+\bibitem[Kwon et~al.(2023)Kwon, Li, Zhuang, Sheng, Zheng, Yu, Gonzalez, Zhang,
+  and Stoica]{kwon2023efficient}
+Woosuk Kwon, Zhuohan Li, Siyuan Zhuang, Ying Sheng, Lianmin Zheng, Cody~Hao Yu,
+  Joseph~E. Gonzalez, Hao Zhang, and Ion Stoica.
+\newblock Efficient memory management for large language model serving with
+  pagedattention.
+\newblock In \emph{Proceedings of the ACM SIGOPS 29th Symposium on Operating
+  Systems Principles}, 2023.
+
+\bibitem[Graves et~al.(2006)Graves, Fern{\'a}ndez, Gomez, and
+  Schmidhuber]{graves2006ctc}
+Alex Graves, Santiago Fern{\'a}ndez, Faustino Gomez, and J{\"u}rgen
+  Schmidhuber.
+\newblock Connectionist temporal classification: Labelling unsegmented sequence
+  data with recurrent neural networks.
+\newblock In \emph{Proceedings of the 23rd International Conference on Machine
+  Learning ({ICML} 2006)}, pages 369--376. {ACM}, 2006.
+\newblock \doi{10.1145/1143844.1143891}.
+
+\bibitem[Jordal and Contributors(2025)]{Audiomentations}
+Iver Jordal and Contributors.
+\newblock Audiomentations: A python library for audio data augmentation.
+\newblock \url{https://github.com/iver56/audiomentations}, 2025.
+
+\end{thebibliography}

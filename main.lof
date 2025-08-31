@@ -1,3 +1,48 @@
+\xpginauxfiletrue 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces An Electron}}{11}{figure.caption.35}
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\setforeignlanguage {english}
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A screenshot of the UI where the user aligns words for both scripts.}}{9}{figure.caption.57}%
+\setforeignlanguage {english}
+\setforeignlanguage {english}
+\setforeignlanguage {english}
+\setforeignlanguage {english}
+\addvspace {10\p@ }
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Overview statistics of the collected audio database.}}{40}{figure.caption.175}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Total duration of collected recitations, broken down by individual reciter.}}{40}{figure.caption.176}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The main page of the custom annotation platform.}}{42}{figure.caption.199}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The reciter management view within the application.}}{42}{figure.caption.200}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces View displaying all available Masahif in the database.}}{42}{figure.caption.201}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Dialog for inserting a new reciter's details.}}{43}{figure.caption.202}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Dialog for creating and annotating a new Moshaf attribute card.}}{43}{figure.caption.203}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Interface for viewing a Moshaf's tracks and playing individual recitations.}}{43}{figure.caption.204}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Architecture of the fine-tuned Wav2Vec2-BERT model for frame classification, compared to a standard streaming model.}}{45}{figure.caption.211}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The Streamlit-based UI for manually verifying segmentation quality and phonetic feature integrity.}}{47}{figure.caption.217}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The editing view within the verification UI, allowing for manual correction of segment boundaries.}}{48}{figure.caption.218}%
+\setforeignlanguage {english}
+\addvspace {10\p@ }
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Multi-level CTC architecture with 11 output heads, each computing a CTC loss, combined via weighted average.}}{52}{figure.caption.233}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Distribution of recitation lengths (in seconds) across the dataset.}}{52}{figure.caption.234}%
+\addvspace {10\p@ }
+\setforeignlanguage {english}
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Gradio Web App interface allowing users to test our model.}}{56}{figure.caption.239}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Gradio Web App interface showing detailed Sifat (attribute) level feedback.}}{57}{figure.caption.240}%
+\addvspace {10\p@ }
+\xpginauxfilefalse 
