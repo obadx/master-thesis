@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" style="background:#f8f9fa;font-family:sans-serif">
+  <!-- TITLE -->
+  <text x="500" y="40" text-anchor="middle" font-size="28" fill="#2c3e50">Multi-Level CTC Architecture</text>
+  
+  <!-- INPUT SPEECH FRAMES (FULLY POPULATED) -->
+  <text x="80" y="100" font-size="18" fill="#2c3e50">Input Speech Frames</text>
+  <g transform="translate(100 110)">
+    <rect x="0" y="0" width="800" height="50" fill="#e3f2fd" stroke="#90caf9" stroke-width="2" rx="5"/>
+    <g font-size="14" fill="#1565c0">
+      <text x="50" y="25" text-anchor="middle">frame0</text>
+      <text x="150" y="25" text-anchor="middle">frame1</text>
+      <text x="250" y="25" text-anchor="middle">frame2</text>
+      <text x="350" y="25" text-anchor="middle">frame3</text>
+      <text x="450" y="25" text-anchor="middle">frame4</text>
+      <text x="550" y="25" text-anchor="middle">frame5</text>
+      <text x="650" y="25" text-anchor="middle">frame6</text>
+      <text x="750" y="25" text-anchor="middle">frame7</text>
+      <text x="790" y="25" text-anchor="middle">...</text>
+    </g>
+  </g>
+  
+  <!-- WAV2VEC2BERT ENCODER (CENTERED TEXT) -->
+  <text x="80" y="210" font-size="18" fill="#2c3e50">Wav2Vec2BERT Encoder</text>
+  <rect x="100" y="220" width="800" height="70" fill="#e8f5e9" stroke="#66bb6a" stroke-width="2" rx="5"/>
+  <text x="500" y="255" text-anchor="middle" font-size="16" fill="#1b5e20">Wav2Vec2BERT Encoder</text>
+  
+  <!-- 3D PERSPECTIVE LEVELS WITH ADJUSTED TEXT POSITIONS -->
+  <text x="80" y="340" font-size="18" fill="#2c3e50">CTC Classification Heads</text>
+  <g transform="translate(0 350)">
+    <!-- Perspective background lines -->
+    <line x1="150" y1="5" x2="850" y2="5" stroke="#b0bec5" stroke-width="1" stroke-dasharray="4"/>
+    <line x1="150" y1="405" x2="850" y2="405" stroke="#b0bec5" stroke-width="1" stroke-dasharray="4"/>
+    
+    <!-- Level boxes with 3D perspective -->
+    <g transform="translate(100 0)">
+      <rect x="0" y="0" width="800" height="40" fill="url(#grad1)" stroke="#5e35b1" stroke-width="2" rx="3"/>
+      <text x="10" y="25" font-size="12" fill="white">1. phonemes</text>
+    </g>
+    <g transform="translate(120 30)">
+      <rect x="0" y="0" width="760" height="38" fill="url(#grad2)" stroke="#3949ab" stroke-width="2" rx="3"/>
+      <text x="10" y="23" font-size="12" fill="white">2. ghonna</text>
+    </g>
+    <g transform="translate(140 60)">
+      <rect x="0" y="0" width="720" height="36" fill="url(#grad3)" stroke="#1e88e5" stroke-width="2" rx="3"/>
+      <text x="10" y="21" font-size="12" fill="white">3. hams_or_jahr</text>
+    </g>
+    <g transform="translate(160 90)">
+      <rect x="0" y="0" width="680" height="34" fill="url(#grad4)" stroke="#00897b" stroke-width="2" rx="3"/>
+      <text x="10" y="19" font-size="12" fill="white">4. istitala</text>
+    </g>
+    <g transform="translate(180 120)">
+      <rect x="0" y="0" width="640" height="32" fill="url(#grad5)" stroke="#43a047" stroke-width="2" rx="3"/>
+      <text x="10" y="17" font-size="12" fill="white">5. itbaq</text>
+    </g>
+    <g transform="translate(200 150)">
+      <rect x="0" y="0" width="600" height="30" fill="url(#grad6)" stroke="#7cb342" stroke-width="2" rx="3"/>
+      <text x="10" y="15" font-size="12" fill="white">6. qalqala</text>
+    </g>
+    <g transform="translate(220 180)">
+      <rect x="0" y="0" width="560" height="28" fill="url(#grad7)" stroke="#f57c00" stroke-width="2" rx="3"/>
+      <text x="10" y="13" font-size="12" fill="white">7. safeer</text>
+    </g>
+    <g transform="translate(240 210)">
+      <rect x="0" y="0" width="520" height="26" fill="url(#grad8)" stroke="#e53935" stroke-width="2" rx="3"/>
+      <text x="10" y="11" font-size="11" fill="white">8. shidda_or_rakhawa</text>
+    </g>
+    <g transform="translate(260 240)">
+      <rect x="0" y="0" width="480" height="24" fill="url(#grad9)" stroke="#8e24aa" stroke-width="2" rx="3"/>
+      <text x="10" y="17" font-size="10" fill="white">9. tafashie</text>
+    </g>
+    <g transform="translate(280 270)">
+      <rect x="0" y="0" width="440" height="22" fill="url(#grad10)" stroke="#5e35b1" stroke-width="2" rx="3"/>
+      <text x="10" y="15" font-size="9" fill="white">10. tafkheem_or_taqeeq</text>
+    </g>
+    <g transform="translate(300 300)">
+      <rect x="0" y="0" width="400" height="20" fill="url(#grad11)" stroke="#3949ab" stroke-width="2" rx="3"/>
+      <text x="10" y="13" font-size="8" fill="white">11. tikraar</text>
+    </g>
+    
+    <!-- Perspective side lines -->
+    <line x1="100" y1="0" x2="300" y2="300" stroke="#78909c" stroke-width="1"/>
+    <line x1="900" y1="0" x2="700" y2="300" stroke="#78909c" stroke-width="1"/>
+  </g>
+  
+  <!-- CONNECTION LINES -->
+  <g stroke="#90a4ae" stroke-width="2">
+    <!-- From frames to encoder -->
+    <line x1="500" y1="160" x2="500" y2="220"/>
+    
+    <!-- From encoder to levels -->
+    <line x1="500" y1="290" x2="500" y2="350"/>
+    
+    <!-- From levels to outputs -->
+    <line x1="500" y1="650" x2="500" y2="700"/>
+  </g>
+  
+  <!-- OUTPUT LABELS -->
+  <text x="500" y="730" text-anchor="middle" font-size="16" fill="#2c3e50">Phonetic/Tajweed Classification Outputs</text>
+  
+  <!-- GRADIENTS -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5e35b1"/>
+      <stop offset="100%" stop-color="#3949ab"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3949ab"/>
+      <stop offset="100%" stop-color="#1e88e5"/>
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e88e5"/>
+      <stop offset="100%" stop-color="#00897b"/>
+    </linearGradient>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00897b"/>
+      <stop offset="100%" stop-color="#43a047"/>
+    </linearGradient>
+    <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#43a047"/>
+      <stop offset="100%" stop-color="#7cb342"/>
+    </linearGradient>
+    <linearGradient id="grad6" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7cb342"/>
+      <stop offset="100%" stop-color="#f57c00"/>
+    </linearGradient>
+    <linearGradient id="grad7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f57c00"/>
+      <stop offset="100%" stop-color="#e53935"/>
+    </linearGradient>
+    <linearGradient id="grad8" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e53935"/>
+      <stop offset="100%" stop-color="#8e24aa"/>
+    </linearGradient>
+    <linearGradient id="grad9" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8e24aa"/>
+      <stop offset="100%" stop-color="#5e35b1"/>
+    </linearGradient>
+    <linearGradient id="grad10" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5e35b1"/>
+      <stop offset="100%" stop-color="#3949ab"/>
+    </linearGradient>
+    <linearGradient id="grad11" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3949ab"/>
+      <stop offset="100%" stop-color="#1e88e5"/>
+    </linearGradient>
+  </defs>
+</svg>

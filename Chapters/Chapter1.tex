@@ -1,0 +1,62 @@
+% Chapter 1
+
+\chapter{Introduction} % Main chapter title
+
+\label{introduction} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Chapter 1. \emph{Introduction}} % This is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+
+
+
+The Holy Quran is the word of Allah, the book He chose for humanity until the Day of Judgment. Although this book is entirely in Arabic, people from other nations can learn to recite it even if they do not know the Arabic language. Regarding this, Allah says:  
+
+\begin{center}
+\arb{﴿ وَلَقَدْ يَسَّرْنَا ٱلْقُرْءَانَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ ﴾}
+\end{center}
+
+``And We have certainly made the Qur'an easy for remembrance, so is there any who will remember?'' (Surah Al-Qamar, 54:17)  
+
+Several efforts have been made to utilize Artificial Intelligence (AI) to help Holy Quran learners recite it properly \cite{abdou2014computer}, \cite{al2018computer}, \cite{ahmed2017arabic}. However, the lack of data and poor representation of Quranic recitation and Tajweed rules have made the task difficult to accomplish.
+
+This project is launched not only as a master's thesis but as a comprehensive initiative to serve three groups of people:
+
+\begin{itemize}
+\item \textbf{Muslims}: Making the Holy Quran accessible in the era of AI.
+\item \textbf{Developers}: By developing a Software Development Kit (SDK) deployable on all devices, including desktops, cloud, and edge devices.
+\item \textbf{Researchers}: By contributing this research as fully open source, including data, code, and models.
+\end{itemize}
+
+This thesis represents the first step: building a foundational model, which, by the grace of Allah, we have achieved.
+
+Assessing pronunciation is not a simple task \cite{kheir2023automatic}, as it involves not only correct phoneme articulation but also factors such as intonation, prosody, and stress. Furthermore, fluency and completeness are also essential \cite{kheir2023automatic}. However, the Holy Quran possesses unique characteristics: it is among the easiest spoken texts to learn, despite containing phonemes absent in other languages.
+
+The pronunciation of the Holy Quran is governed by rigorously defined rules formalized by classical Muslim scholars since the 6th century. Despite their precision and beauty, these rules have not been comprehensively digitized (to our knowledge) for automated Quranic pronunciation assessment.
+
+Although the RDI company pioneered computer-aided Quranic instruction \cite{sherif2007enhancing}, they did not disclose their phoneticization process or release data or models. As a result, new research must start from the basics: defining phoneticization, data, and models. To bridge this gap, we introduce:
+
+\begin{itemize}
+\item \textbf{A Phonetizer}: Encodes \textit{all} Tajweed rules and articulation attributes (\textit{Sifat}) defined by classical scholars, except \textit{Ishmam} (إشمام).
+\item \textbf{A 98\% Automated Pipeline}: Generates highly accurate datasets from expert recitations.
+\item \textbf{A Dataset}: $\sim$300K annotated utterances (890 hours).
+\item \textbf{Integration}: Our multi-level CTC model demonstrates the learnability of the Quranic phonetic script (achieving a 0.16\% average phoneme error rate).
+\end{itemize}
+
+The Thesis is organized as follows:
+
+\begin{itemize}
+\item \textbf{Related Work}: Expands on the strengths and weaknesses of prior research.
+\item \textbf{Quran Phonetic Script}: Introduces our two-level script: \textbf{phonemes} and \textbf{Sifat} (10 attributes $\rightarrow$ 11 total levels).
+\item \textbf{Data Pipeline}: Stages include:  
+  (1) Digitized Quran script as foundation,  
+  (2) \textit{Hafs} methodology criteria,  
+  (3) Expert recitation collection,  
+  (4) Segmentation at pause points (وقف),  
+  (5) Segment transcription,  
+  (6) Validation via \textit{Tasmee} (تسميع) algorithm.  
+\item \textbf{Modeling}: Demonstrates the learnability of the phonetic script.
+\item \textbf{Results}: Analysis of outcomes.
+\item \textbf{Limitations \& Future Work}: Proposed research directions.
+\item \textbf{Conclusion}: Summary of contributions.
+\end{itemize}

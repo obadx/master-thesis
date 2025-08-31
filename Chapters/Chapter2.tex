@@ -1,0 +1,29 @@
+% Chapter 2
+
+\chapter{Related Word} % Main chapter title
+
+\label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter2} 
+
+\lhead{Chapter 2. \emph{Related Word}} % This is for the header on each page - perhaps a shortened title
+
+%--------------------------------------------------------------
+
+
+\section{Quran Pronunciation Datasets}
+
+We discuss the most important datasets here. Everyayah\footnote{everyayah.com} is the largest openly available dataset with 26 complete \textit{Mushafs} segmented and annotated by Ayah by experts like Al Hossary and non-experts such as Fares Abbad. Qdat \cite{osman2021qdat} contains 1509 utterances of single specific Ayahs labeled for three rules: Madd, Ghunna, and Ikhfaa. Although the scale is relatively small, it was widely adopted by the community \cite{10092350}, \cite{10092350}, and \cite{shaiakhmetov2025evaluation} due to being open-source. The Tarteel v1 dataset \cite{khan2021tarteel} consists of 25K utterances with diacritics and no Tajweed rules. The latter is the Tarteel \cite{tarteelai} private dataset, a massive 9K-hour collection annotated and diacritics without Tajweed rules. The most recent benchmark is IqraaEval \cite{kheir2025towards}, which presents a test set of 2.2 hours from 18 speakers, but uses Modern Standard Arabic (MSA) without Tajweed rules.
+
+\section{Quran Pronunciation Models}
+
+To our knowledge, the first work addressing automated pronunciation assessment for the Holy Quran is RDI \cite{sherif2007enhancing}, which built a complete system for detecting pronunciation errors. The work does not specify which errors were included or excluded but mentions testing Qalqala, Idgham, and Iqlab rules. It also omits details on Quranic word phoneticization. Subsequent work continued with \cite{abdou2014computer} and \cite{al2018computer}, using Deep Neural Networks (DNNs) to replace HMMs and improve the system. Many studies rely on modeling phoneme duration for duration-dependent rules like Madd and Ghunna, e.g., \cite{mohammed2017recognition}, \cite{alqadasi2023improving}, but use limited datasets and focus on specific verses rather than the entire Quran. Others concentrate on detecting specific rules like Qalqala \cite{10092350} or Ghunna and Madd \cite{shaiakhmetov2025evaluation}, \cite{10485145}. However, most efforts except RDI work train on small-scale datasets from specific Quranic chapters.
+
+At this point, Tarteel \cite{tarteelai} emerges; though lacking Tajweed rules, they built a robust ASR system for diacritized character detection. They developed a crowd-sourced dataset \cite{khan2021tarteel} of 25K utterances (68 hours), later extended via application users to 9K hours of private annotated data. The work most aligned with our vision of detecting all error types (including Tajweed and \textit{Sifat}/articulation attributes) is \cite{putra2012developing}. Although it relies on HMMs and minimal data, it introduces a multi-level detection system: \textit{Makhraj} (phoneme level) and Tajweed rules level.
+
+\section{Pretrained Speech Encoders with Self-Supervised Learning (SSL)}
+
+Speech pretraining began early \cite{hinton2006reducing} but was constrained by the sequential nature of Recurrent Neural Networks (RNNs) \cite{hopfield1982neural}. The rise of Transformers \cite{vaswani2017attention} facilitated greater GPU parallelization, enabling large-scale pretraining. BERT \cite{devlin2019bert} using Masked Language Modeling (MLM) introduced large unsupervised pretraining which has better results on downstream tasks. This soon extended to speech with wav2vec \cite{schneider2019wav2vec} and wav2vec2.0, which added product quantization \cite{baevski2020wav2vec}. Conformer later replaced vanilla Transformers for speech by integrating convolution \cite{gulati2020conformer}. Google's Wav2Vec2-BERT \cite{chung2021w2v} then applied MLM to speech. Finally, Facebook extended Wav2Vec2-BERT pretraining \cite{barrault2023seamless} to 4.5M hours (including 110K Arabic hours), ideal for low-resource language fine-tuning.
+
+
+
+
+
