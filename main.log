@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.8.31)  1 SEP 2025 20:02
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.8.31)  1 SEP 2025 21:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1314,15 +1314,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--141
 ])
 (./summary.tex [9] [10
 
-]) (./Acknowledgment.tex [11] [12
-
-]
+] [11]) (./Acknowledgment.tex [12]
 Overfull \hbox (15.45894pt too wide) in paragraph at lines 16--17
 [][]\TU/TimesNewRoman(0)/m/n/10.95 I express my greatest gratitude to my mother
 , Azza, for her unwavering support from the beginning—[]
  []
 
-) [13]
+) [13
+
+]
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
@@ -5710,7 +5710,7 @@ runsystem(rm main.pyg)...executed.
  ) 
 Here is how much of TeX's memory you used:
  25889 strings out of 474878
- 502972 string characters out of 5762516
+ 502968 string characters out of 5762516
  1947627 words of memory out of 5000000
  47309 multiletter control sequences out of 15000+600000
  566429 words of font info for 125 fonts, out of 8000000 for 9000

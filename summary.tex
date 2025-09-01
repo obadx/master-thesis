@@ -18,49 +18,25 @@
 %\underline{\textbf{Summary}}
 %\end{center}
 %
-The thesis is divided into seven chapters as listed below:
-
-\begin{flushleft}
-\underline{Chapter 1}
-\end{flushleft}
+% The thesis is divided into seven chapters as listed below:
 
 
+This thesis presents a comprehensive framework for the automated assessment of Quranic recitation by developing a novel phonetic script and a corresponding deep learning model. To guide the reader, this summary outlines the structure and contributions of each chapter.
 
+In Chapter~\ref{Chapter1} (Introduction), we introduce the core problem: the need for a precise, computationally tractable system to evaluate Tajweed (Quranic recitation rules). We establish the purpose of this work: to develop a fine-grained Quranic phonetic script capable of capturing all Tajweed rules and articulation attributes, thereby reformulating pronunciation assessment as a sequence-to-sequence problem.
 
-\begin{flushleft}
-\underline{Chapter 2}
-\end{flushleft}
+Chapter~\ref{Chapter2} (Literature Review) provides a review of the relevant literature. We explore existing works in speech recognition, previous attempts at Arabic phonetic notation, and the specific domain of Tajweed rule formalization. This chapter identifies the gaps in current methodologies, particularly the lack of a script that seamlessly integrates phonological and Tajweed-related features, which our work aims to fill.
 
+The primary theoretical contribution of this thesis is presented in Chapter~\ref{Chapter3} (A Novel Multi-Level Script), where we introduce our novel multi-level Quranic phonetic script. This script is designed to hierarchically represent pronunciation, encompassing everything from basic phonemes to complex Tajweed rules and precise articulation points (\textit{makharij}). This script serves as the foundational representation layer for all subsequent data annotation and modeling.
 
+Building upon this script, Chapter~\ref{Chapter4} (Data Pipeline and Annotation) details our data creation pipeline. We demonstrate a 98\% automated process for generating a large-scale, high-quality annotated dataset. The result is a substantial corpus totaling 890 hours of audio and nearly 300,000 samples, each meticulously aligned with our multi-level script. This dataset is a significant resource for the field.
 
-\begin{flushleft}
-\underline{Chapter 3}
-\end{flushleft}
+In Chapter~\ref{Chapter5} (Multi-Level CTC Model), we address the modeling challenge. We introduce a novel multi-level Connectionist Temporal Classification (CTC) architecture specifically designed to decode the hierarchical nature of our phonetic script. This model is capable of predicting sequences across multiple levels of abstraction simultaneously, directly aligning with our reformulated problem statement.
 
+The efficacy of our entire methodology is validated in Chapter~\ref{Chapter6} (Results and Discussion). We present extensive experimental results that prove our approach successfully reformulates and addresses the Quranic pronunciation assessment task. The performance of our model on the dataset from Chapter~\ref{Chapter4} demonstrates high accuracy in capturing the intricacies of Tajweed.
 
+Finally, Chapter~\ref{Chapter7} (Conclusion and Future Work) concludes the thesis. We summarize our key contributions—the novel script, the large-scale dataset, and the multi-level model—and discuss the limitations of our current work. The chapter concludes by exploring promising directions for future research, building upon the foundation established here.
 
-\begin{flushleft}
-\underline{Chapter 4}
-\end{flushleft}
-
-
-
-
-\begin{flushleft}
-\underline{Chapter 5}
-\end{flushleft}
-
-
-
-\begin{flushleft}
-\underline{Chapter 6}
-\end{flushleft}
-
-
-
-\begin{flushleft}
-\underline{Chapter 7}
-\end{flushleft}
 
 \vfill 
 
