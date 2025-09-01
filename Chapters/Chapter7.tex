@@ -4,20 +4,20 @@
 
 \label{Chapter7} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\lhead{Chapter X. \emph{Conclusion}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+\lhead{Chapter 7. \emph{Conclusion}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
 
 \section*{Conclusion}
 
 We present a new way of assessing pronunciation errors of Holy Quran learners by developing multi-level Quran Phonetic Script capable of capturing all pronunciation errors for \arb{حفص} except for \arb{إشمام} (as it is a sign not pronounced by mouth), along with 890 hours and 300K of annotated data, a 98\% pipeline to create similar data, plus modeling and validation \cite{citation}.
 
 
-\section{Limitations and Future Work}
+\section{Limitations}
 
 Our primary limitation is that our dataset consists of golden recitations with no errors, limiting our ability to evaluate performance on real-world data. Although we tested on a few actual samples and successfully detected \arb{مد}, \arb{غنة}, and \arb{قلقة} errors, we need to develop a comprehensive dataset containing error-containing recitations transcribed with our Quran Phonetic Script.
 
 A secondary limitation arises from attribute-specific articulation patterns: Certain attributes apply exclusively to individual letters, such as `Istitala` for (\arb{ض}) and `Tikrar` for (\arb{ر}). Consequently, we expect our model will be unable to capture instances of (\arb{ض}) without `Istitala` or (\arb{ر}) without `Tikrar`. This limitation similarly applies to Tajweed rules that occur less frequently in the Holy Quran, such as \arb{إمالة}, \arb{روم}, and \arb{تسهيل}.
 
-\subsection{Future Work}
+\section{Future Work}
 
 To address these limitations, we plan to:
 

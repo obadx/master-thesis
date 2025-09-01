@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.8.31)  31 AUG 2025 22:41
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.8.31)  1 SEP 2025 08:37
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1333,13 +1333,19 @@ Overfull \hbox (15.45894pt too wide) in paragraph at lines 16--17
 LaTeX Info: Redefining \rmfamily on input line 2.
 LaTeX Info: Redefining \sffamily on input line 2.
 LaTeX Info: Redefining \ttfamily on input line 2.
- [15]
+LaTeX Info: Redefining \rmfamily on input line 30.
+LaTeX Info: Redefining \sffamily on input line 30.
+LaTeX Info: Redefining \ttfamily on input line 30.
+LaTeX Info: Redefining \rmfamily on input line 31.
+LaTeX Info: Redefining \sffamily on input line 31.
+LaTeX Info: Redefining \ttfamily on input line 31.
 LaTeX Info: Redefining \rmfamily on input line 32.
 LaTeX Info: Redefining \sffamily on input line 32.
 LaTeX Info: Redefining \ttfamily on input line 32.
 LaTeX Info: Redefining \rmfamily on input line 33.
 LaTeX Info: Redefining \sffamily on input line 33.
 LaTeX Info: Redefining \ttfamily on input line 33.
+ [15]
 LaTeX Info: Redefining \rmfamily on input line 34.
 LaTeX Info: Redefining \sffamily on input line 34.
 LaTeX Info: Redefining \ttfamily on input line 34.
@@ -1355,21 +1361,21 @@ LaTeX Info: Redefining \ttfamily on input line 37.
 LaTeX Info: Redefining \rmfamily on input line 38.
 LaTeX Info: Redefining \sffamily on input line 38.
 LaTeX Info: Redefining \ttfamily on input line 38.
+LaTeX Info: Redefining \rmfamily on input line 38.
+LaTeX Info: Redefining \sffamily on input line 38.
+LaTeX Info: Redefining \ttfamily on input line 38.
+LaTeX Info: Redefining \rmfamily on input line 38.
+LaTeX Info: Redefining \sffamily on input line 38.
+LaTeX Info: Redefining \ttfamily on input line 38.
+LaTeX Info: Redefining \rmfamily on input line 39.
+LaTeX Info: Redefining \sffamily on input line 39.
+LaTeX Info: Redefining \ttfamily on input line 39.
 LaTeX Info: Redefining \rmfamily on input line 39.
 LaTeX Info: Redefining \sffamily on input line 39.
 LaTeX Info: Redefining \ttfamily on input line 39.
 LaTeX Info: Redefining \rmfamily on input line 40.
 LaTeX Info: Redefining \sffamily on input line 40.
 LaTeX Info: Redefining \ttfamily on input line 40.
-LaTeX Info: Redefining \rmfamily on input line 40.
-LaTeX Info: Redefining \sffamily on input line 40.
-LaTeX Info: Redefining \ttfamily on input line 40.
-LaTeX Info: Redefining \rmfamily on input line 40.
-LaTeX Info: Redefining \sffamily on input line 40.
-LaTeX Info: Redefining \ttfamily on input line 40.
-LaTeX Info: Redefining \rmfamily on input line 41.
-LaTeX Info: Redefining \sffamily on input line 41.
-LaTeX Info: Redefining \ttfamily on input line 41.
 LaTeX Info: Redefining \rmfamily on input line 41.
 LaTeX Info: Redefining \sffamily on input line 41.
 LaTeX Info: Redefining \ttfamily on input line 41.
@@ -1421,19 +1427,13 @@ LaTeX Info: Redefining \ttfamily on input line 56.
 LaTeX Info: Redefining \rmfamily on input line 57.
 LaTeX Info: Redefining \sffamily on input line 57.
 LaTeX Info: Redefining \ttfamily on input line 57.
-LaTeX Info: Redefining \rmfamily on input line 58.
-LaTeX Info: Redefining \sffamily on input line 58.
-LaTeX Info: Redefining \ttfamily on input line 58.
-LaTeX Info: Redefining \rmfamily on input line 59.
-LaTeX Info: Redefining \sffamily on input line 59.
-LaTeX Info: Redefining \ttfamily on input line 59.
-LaTeX Info: Redefining \rmfamily on input line 62.
-LaTeX Info: Redefining \sffamily on input line 62.
-LaTeX Info: Redefining \ttfamily on input line 62.
+LaTeX Info: Redefining \rmfamily on input line 60.
+LaTeX Info: Redefining \sffamily on input line 60.
+LaTeX Info: Redefining \ttfamily on input line 60.
  [16]
-LaTeX Info: Redefining \rmfamily on input line 83.
-LaTeX Info: Redefining \sffamily on input line 83.
-LaTeX Info: Redefining \ttfamily on input line 83.
+LaTeX Info: Redefining \rmfamily on input line 81.
+LaTeX Info: Redefining \sffamily on input line 81.
+LaTeX Info: Redefining \ttfamily on input line 81.
 )
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -1798,27 +1798,81 @@ LaTeX Info: Redefining \ttfamily on input line 58.
 \tf@loa=\write9
 \openout9 = `main.loa'.
 
- [25
+
+! Misplaced alignment tab character &.
+l.341 $a$ &
+            distance & m \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.341 $a$ & distance &
+                       m \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.342 $P$ &
+            power & W (Js$^{-1}$) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.342 $P$ & power &
+                    W (Js$^{-1}$) \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
 
-]
-------------------------------------------------------------------------------
- List of Abbreviations
-------------------------------------------------------------------------------
-[26
+Underfull \hbox (badness 10000) in paragraph at lines 341--344
+[][]
+ []
+
+! Misplaced alignment tab character &.
+l.347 $\omega$ &
+                 angular frequency & rads$^{-1}$ \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.347 $\omega$ & angular frequency &
+                                     rads$^{-1}$ \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 347--350
+[][]
+ []
 
-] [27] [28
-
-]
-------------------------------------------------------------------------------
- List of Symbols
-------------------------------------------------------------------------------
-[29
+[25
 
 
-] [30
+] [26
 
 ] (./Chapters/Chapter1.tex
 Chapter 1.
@@ -1829,7 +1883,6 @@ LaTeX Info: Redefining \rmfamily on input line 16.
 LaTeX Info: Redefining \sffamily on input line 16.
 LaTeX Info: Redefining \ttfamily on input line 16.
 [1
-
 
 ]) (./Chapters/Chapter2.tex [2]
 Chapter 2.
@@ -4825,62 +4878,52 @@ LaTeX Info: Redefining \ttfamily on input line 697.
 LaTeX Info: Redefining \rmfamily on input line 707.
 LaTeX Info: Redefining \sffamily on input line 707.
 LaTeX Info: Redefining \ttfamily on input line 707.
-
-Overfull \hbox (152.09523pt too wide) in alignment at lines 709--715
- [] [] [] [] [] [] [] 
- []
-
-LaTeX Info: Redefining \rmfamily on input line 717.
-LaTeX Info: Redefining \sffamily on input line 717.
-LaTeX Info: Redefining \ttfamily on input line 717.
-LaTeX Info: Redefining \rmfamily on input line 719.
-LaTeX Info: Redefining \sffamily on input line 719.
-LaTeX Info: Redefining \ttfamily on input line 719.
-LaTeX Info: Redefining \rmfamily on input line 721.
-LaTeX Info: Redefining \sffamily on input line 721.
-LaTeX Info: Redefining \ttfamily on input line 721.
-LaTeX Info: Redefining \rmfamily on input line 723.
-LaTeX Info: Redefining \sffamily on input line 723.
-LaTeX Info: Redefining \ttfamily on input line 723.
-LaTeX Info: Redefining \rmfamily on input line 725.
-LaTeX Info: Redefining \sffamily on input line 725.
-LaTeX Info: Redefining \ttfamily on input line 725.
-LaTeX Info: Redefining \rmfamily on input line 727.
-LaTeX Info: Redefining \sffamily on input line 727.
-LaTeX Info: Redefining \ttfamily on input line 727.
-LaTeX Info: Redefining \rmfamily on input line 729.
-LaTeX Info: Redefining \sffamily on input line 729.
-LaTeX Info: Redefining \ttfamily on input line 729.
-LaTeX Info: Redefining \rmfamily on input line 731.
-LaTeX Info: Redefining \sffamily on input line 731.
-LaTeX Info: Redefining \ttfamily on input line 731.
-
-Overfull \hbox (152.09523pt too wide) in alignment at lines 715--733
- [] [] [] [] [] [] [] 
- []
-
-[44]
+LaTeX Info: Redefining \rmfamily on input line 745.
+LaTeX Info: Redefining \sffamily on input line 745.
+LaTeX Info: Redefining \ttfamily on input line 745.
+LaTeX Info: Redefining \rmfamily on input line 747.
+LaTeX Info: Redefining \sffamily on input line 747.
+LaTeX Info: Redefining \ttfamily on input line 747.
+LaTeX Info: Redefining \rmfamily on input line 749.
+LaTeX Info: Redefining \sffamily on input line 749.
+LaTeX Info: Redefining \ttfamily on input line 749.
+LaTeX Info: Redefining \rmfamily on input line 751.
+LaTeX Info: Redefining \sffamily on input line 751.
+LaTeX Info: Redefining \ttfamily on input line 751.
+LaTeX Info: Redefining \rmfamily on input line 753.
+LaTeX Info: Redefining \sffamily on input line 753.
+LaTeX Info: Redefining \ttfamily on input line 753.
+LaTeX Info: Redefining \rmfamily on input line 755.
+LaTeX Info: Redefining \sffamily on input line 755.
+LaTeX Info: Redefining \ttfamily on input line 755.
+LaTeX Info: Redefining \rmfamily on input line 757.
+LaTeX Info: Redefining \sffamily on input line 757.
+LaTeX Info: Redefining \ttfamily on input line 757.
+LaTeX Info: Redefining \rmfamily on input line 759.
+LaTeX Info: Redefining \sffamily on input line 759.
+LaTeX Info: Redefining \ttfamily on input line 759.
+ [44]
 File: Pictures/../figures/vad-arch.png Graphic file (type bmp)
 <Pictures/../figures/vad-arch.png>
-LaTeX Info: Redefining \rmfamily on input line 754.
-LaTeX Info: Redefining \sffamily on input line 754.
-LaTeX Info: Redefining \ttfamily on input line 754.
-LaTeX Info: Redefining \rmfamily on input line 757.
-LaTeX Info: Redefining \sffamily on input line 757.
-LaTeX Info: Redefining \ttfamily on input line 757.
-LaTeX Info: Redefining \rmfamily on input line 757.
-LaTeX Info: Redefining \sffamily on input line 757.
-LaTeX Info: Redefining \ttfamily on input line 757.
+LaTeX Info: Redefining \rmfamily on input line 783.
+LaTeX Info: Redefining \sffamily on input line 783.
+LaTeX Info: Redefining \ttfamily on input line 783.
+LaTeX Info: Redefining \rmfamily on input line 786.
+LaTeX Info: Redefining \sffamily on input line 786.
+LaTeX Info: Redefining \ttfamily on input line 786.
+LaTeX Info: Redefining \rmfamily on input line 786.
+LaTeX Info: Redefining \sffamily on input line 786.
+LaTeX Info: Redefining \ttfamily on input line 786.
  [45]
-LaTeX Info: Redefining \rmfamily on input line 805.
-LaTeX Info: Redefining \sffamily on input line 805.
-LaTeX Info: Redefining \ttfamily on input line 805.
-LaTeX Info: Redefining \rmfamily on input line 805.
-LaTeX Info: Redefining \sffamily on input line 805.
-LaTeX Info: Redefining \ttfamily on input line 805.
-LaTeX Info: Redefining \rmfamily on input line 806.
-LaTeX Info: Redefining \sffamily on input line 806.
-LaTeX Info: Redefining \ttfamily on input line 806.
+LaTeX Info: Redefining \rmfamily on input line 834.
+LaTeX Info: Redefining \sffamily on input line 834.
+LaTeX Info: Redefining \ttfamily on input line 834.
+LaTeX Info: Redefining \rmfamily on input line 834.
+LaTeX Info: Redefining \sffamily on input line 834.
+LaTeX Info: Redefining \ttfamily on input line 834.
+LaTeX Info: Redefining \rmfamily on input line 835.
+LaTeX Info: Redefining \sffamily on input line 835.
+LaTeX Info: Redefining \ttfamily on input line 835.
 File: Pictures/../figures/data_verfication_ui.png Graphic file (type bmp)
 <Pictures/../figures/data_verfication_ui.png>
  [46]
@@ -4888,21 +4931,21 @@ File: Pictures/../figures/data_annotation_ui_editing.png Graphic file (type bmp
 )
 <Pictures/../figures/data_annotation_ui_editing.png>
  [47]
-LaTeX Info: Redefining \rmfamily on input line 827.
-LaTeX Info: Redefining \sffamily on input line 827.
-LaTeX Info: Redefining \ttfamily on input line 827.
+LaTeX Info: Redefining \rmfamily on input line 856.
+LaTeX Info: Redefining \sffamily on input line 856.
+LaTeX Info: Redefining \ttfamily on input line 856.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textarabic' on input line 827.
+(hyperref)                removing `\textarabic' on input line 856.
 
-LaTeX Info: Redefining \rmfamily on input line 829.
-LaTeX Info: Redefining \sffamily on input line 829.
-LaTeX Info: Redefining \ttfamily on input line 829.
+LaTeX Info: Redefining \rmfamily on input line 858.
+LaTeX Info: Redefining \sffamily on input line 858.
+LaTeX Info: Redefining \ttfamily on input line 858.
 [48]
-LaTeX Info: Redefining \rmfamily on input line 835.
-LaTeX Info: Redefining \sffamily on input line 835.
-LaTeX Info: Redefining \ttfamily on input line 835.
+LaTeX Info: Redefining \rmfamily on input line 864.
+LaTeX Info: Redefining \sffamily on input line 864.
+LaTeX Info: Redefining \ttfamily on input line 864.
 
 
 ! LaTeX Error: Environment algorithmic undefined.
@@ -4911,14 +4954,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.856 \begin{algorithmic}
+l.885 \begin{algorithmic}
                          [1]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.857 \REQUIRE
+l.886 \REQUIRE
                $text\_segments = [s_1, s_2, \dots, s_n]$, $sura\_idx$,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4927,7 +4970,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.860 \ENSURE
+l.889 \ENSURE
               List of tuples $(match, ratio)$ per segment
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4936,7 +4979,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.862 \STATE
+l.891 \STATE
              $aya \leftarrow 1$ \COMMENT{Start at first verse}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4945,7 +4988,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.862 \STATE $aya \leftarrow 1$ \COMMENT
+l.891 \STATE $aya \leftarrow 1$ \COMMENT
                                         {Start at first verse}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4954,7 +4997,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.863 \STATE
+l.892 \STATE
              $penalty \leftarrow 0$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4963,7 +5006,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.864 \FOR
+l.893 \FOR
           {each segment $s_i$ in $text\_segments$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4972,7 +5015,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.865     \STATE
+l.894     \STATE
                  $norm\_text \leftarrow$ normalize($s_i$) \COMMENT{Remove sp...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4981,7 +5024,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.865 ...ext \leftarrow$ normalize($s_i$) \COMMENT
+l.894 ...ext \leftarrow$ normalize($s_i$) \COMMENT
                                                   {Remove spaces/diacritics}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4990,7 +5033,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.866     \STATE
+l.895     \STATE
                  $min\_win \leftarrow window\_words - 10$, $max\_win \leftar...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4999,7 +5042,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.867     \STATE
+l.896     \STATE
                  $start\_range \leftarrow [-(overlap + penalty), (overlap + ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5008,7 +5051,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.869     \IF
+l.898     \IF
              {first segment \AND $include\_istiaatha$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5017,7 +5060,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.869     \IF{first segment \AND
+l.898     \IF{first segment \AND
                                  $include\_istiaatha$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5026,7 +5069,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.870         \STATE
+l.899         \STATE
                      Check istiaatha special case
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5035,7 +5078,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.871     \ELSIF
+l.900     \ELSIF
                 {last segment \AND $include\_sadaka$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5044,7 +5087,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.871     \ELSIF{last segment \AND
+l.900     \ELSIF{last segment \AND
                                    $include\_sadaka$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5053,7 +5096,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.872         \STATE
+l.901         \STATE
                      Check sadaka special case
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5062,7 +5105,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.873     \ENDIF
+l.902     \ENDIF
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5071,7 +5114,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.875     \STATE
+l.904     \STATE
                  $best\_ratio \leftarrow 0$, $best\_match \leftarrow \text{n...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5080,7 +5123,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.876     \FOR
+l.905     \FOR
               {each start position $p$ in $start\_range$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5089,7 +5132,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.877         \FOR
+l.906         \FOR
                   {each window size $w \in [min\_win, max\_win]$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5098,7 +5141,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.878             \STATE
+l.907             \STATE
                          $c \leftarrow$ extract candidate at ($aya$, $p$, $w$)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5107,7 +5150,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.879             \STATE
+l.908             \STATE
                          $dist \leftarrow \text{edit\_distance}(norm\_text, c)$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5116,7 +5159,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.880             \STATE
+l.909             \STATE
                          $ratio \leftarrow 1 - \min(dist, |norm\_text|) / |n...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5125,7 +5168,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.881             \IF
+l.910             \IF
                      {$ratio > best\_ratio$ \OR ($ratio = best\_ratio$ \AND ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5134,7 +5177,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.881             \IF{$ratio > best\_ratio$ \OR
+l.910             \IF{$ratio > best\_ratio$ \OR
                                                 ($ratio = best\_ratio$ \AND ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5143,7 +5186,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.881 ...t\_ratio$ \OR ($ratio = best\_ratio$ \AND
+l.910 ...t\_ratio$ \OR ($ratio = best\_ratio$ \AND
                                                    $|p| < |best\_start|$)}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5152,7 +5195,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.882                 \STATE
+l.911                 \STATE
                              update $best\_ratio$, $best\_match$, $best\_sta...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5161,7 +5204,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.883             \ENDIF
+l.912             \ENDIF
                         
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5170,7 +5213,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.884         \ENDFOR
+l.913         \ENDFOR
                      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5179,7 +5222,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.885     \ENDFOR
+l.914     \ENDFOR
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5188,7 +5231,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.887     \IF
+l.916     \IF
              {$best\_ratio < acceptance\_ratio$}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5197,7 +5240,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.888         \STATE
+l.917         \STATE
                      output (null, $best\_ratio$)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5206,7 +5249,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.889         \STATE
+l.918         \STATE
                      $penalty \leftarrow max\_win$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5215,7 +5258,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.890         \STATE
+l.919         \STATE
                      $aya \leftarrow aya + 1$ \COMMENT{Default advance}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5224,7 +5267,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.890 ... \STATE $aya \leftarrow aya + 1$ \COMMENT
+l.919 ... \STATE $aya \leftarrow aya + 1$ \COMMENT
                                                   {Default advance}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5233,7 +5276,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.891     \ELSE
+l.920     \ELSE
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5242,7 +5285,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.892         \STATE
+l.921         \STATE
                      output ($best\_match$, $best\_ratio$)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5251,7 +5294,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.893         \STATE
+l.922         \STATE
                      $aya \leftarrow aya + best\_start + best\_window$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5260,7 +5303,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.894         \STATE
+l.923         \STATE
                      $penalty \leftarrow 0$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5269,7 +5312,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.895     \ENDIF
+l.924     \ENDIF
                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5278,7 +5321,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.896 \ENDFOR
+l.925 \ENDFOR
              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5287,7 +5330,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.897 \STATE
+l.926 \STATE
              \textbf{Complexity:} $O(N \cdot W \cdot L^2)$ \COMMENT{$N$=segm...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5296,7 +5339,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.897 ...exity:} $O(N \cdot W \cdot L^2)$ \COMMENT
+l.926 ...exity:} $O(N \cdot W \cdot L^2)$ \COMMENT
                                                   {$N$=segments, $W$=window ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5305,13 +5348,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: \begin{lrbox} on input line 853 ended by \end{algorithmic}.
+! LaTeX Error: \begin{lrbox} on input line 882 ended by \end{algorithmic}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.898 \end{algorithmic}
+l.927 \end{algorithmic}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5600,18 +5643,24 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BBB77BBB40E26C738926202C5A656A3C;20070.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D07EB067F3C085600698DEA6FBD8BB13;19787
+(rerunfilecheck)             After:  FFD947A43D6153142591E5EAE3128A20;19685.
 runsystem(rm main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 25855 strings out of 474878
- 502037 string characters out of 5762516
+ 25853 strings out of 474878
+ 502023 string characters out of 5762516
  1947627 words of memory out of 5000000
- 47281 multiletter control sequences out of 15000+600000
+ 47279 multiletter control sequences out of 15000+600000
  566421 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  75i,12n,99p,1217b,1198s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (94 pages).
+Output written on main.pdf (90 pages).

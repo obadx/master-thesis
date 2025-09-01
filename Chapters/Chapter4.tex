@@ -706,11 +706,39 @@ For each Moshaf, we tuned the following segmentation parameters to optimize alig
 
 The resulting dataset, comprising eight complete \arb{مصاحف}, is summarized in Table \ref{tab:segmenter_data}.
 
-\begin{longtable}{|p{4cm}|c|c|c|c|c|c|}
+% \begin{longtable}{|p{4cm}|c|c|c|c|c|c|}
+% \caption{Dataset used for training the custom segmenter, consisting of eight complete Masahif with tuned parameters.}
+% \label{tab:segmenter_data}\\
+% \hline
+% \textbf{Reciter Name} & \textbf{ID} & \textbf{Window Size (Samples)} & \textbf{Threshold} & \textbf{Min Silence (ms)} & \textbf{Min Speech (ms)} & \textbf{Pad (ms)} \\ 
+% \hline
+% \endfirsthead
+% \hline
+% \arb{محمود خليل الحصري} & 0 & 1536 & 0.3 & 500 & 1000 & 40 \\
+% \hline
+% \arb{محمد صديق المنشاوي} & 1 & 1536 & 0.3 & 400 & 1000 & 20 \\
+% \hline
+% \arb{عبد الباسط عبد الصمد} & 2 & 1536 & 0.3 & 400 & 700 & 20 \\
+% \hline
+% \arb{محمود علي البنا} & 3 & 1536 & 0.3 & 400 & 700 & 20 \\
+% \hline
+% \arb{على الحذيفي} & 5 & 1536 & 0.3 & 350 & 700 & 5 \\
+% \hline
+% \arb{أيمن رشدي سويد} & 6 & 1536 & 0.3 & 500 & 1000 & 10 \\
+% \hline
+% \arb{محمد أيوب} & 7 & 1536 & 0.3 & 400 & 1000 & 10 \\
+% \hline
+% \arb{إبراهيم الأخضر} & 8 & 1536 & 0.3 & 390 & 700 & 30 \\
+% \hline
+% \end{longtable}
+
+{\small
+\begin{longtable}{|p{2.8cm}|c|c|c|c|c|c|}
 \caption{Dataset used for training the custom segmenter, consisting of eight complete Masahif with tuned parameters.}
 \label{tab:segmenter_data}\\
 \hline
-\textbf{Reciter Name (Arabic)} & \textbf{ID} & \textbf{Window Size (Samples)} & \textbf{Threshold} & \textbf{Min Silence (ms)} & \textbf{Min Speech (ms)} & \textbf{Pad (ms)} \\ 
+\textbf{Reciter Name} & \textbf{ID} & \textbf{Window Size} & \textbf{Threshold} & \textbf{Min Silence} & \textbf{Min Speech} & \textbf{Pad} \\ 
+& & \textbf{(Samples)} & & \textbf{(ms)} & \textbf{(ms)} & \textbf{(ms)} \\ 
 \hline
 \endfirsthead
 \hline
@@ -731,6 +759,7 @@ The resulting dataset, comprising eight complete \arb{مصاحف}, is summarized
 \arb{إبراهيم الأخضر} & 8 & 1536 & 0.3 & 390 & 700 & 30 \\
 \hline
 \end{longtable}
+}
 
 \subsubsection{Data Augmentation}
 
