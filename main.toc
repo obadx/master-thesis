@@ -88,4 +88,5 @@
 \contentsline {section}{\numberline {7.2}Future Work}{59}{section.236}%
 \vspace {2em}
 \contentsline {chapter}{References}{61}{dummy.241}%
+\contentsline {chapter}{\textarabic {الملخص}}{65}{dummy.244}%
 \xpginauxfilefalse 
