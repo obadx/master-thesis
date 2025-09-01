@@ -56,5 +56,10 @@
 \contentsline {table}{\numberline {6.1}{\ignorespaces Test results on Mushaf 26.1 and 19.0. The Average Phoneme Error Rate (PER) is \textbf {0.16\%}, confirming the learnability of the Quran Phonetic Script. The phoneme-level PER is higher (0.54\%) due to its larger vocabulary.}}{56}{table.caption.229}%
 \setforeignlanguage {english}
 \setforeignlanguage {english}
+\contentsline {table}{\numberline {6.2}{\ignorespaces The table above shows different loss weights applied to equation \ref {eq:multilevel_ctc} for three experiments: `EXP1`, `EXP2`, and `EXP3`. The `phonemes` level weight was kept constant across all runs. In each run, we tuned the weights for `shidda_or_rakhawa` and `tafkheem_or_tarqeeq` to minimize the average Phoneme Error Rate (PER) and the standard deviation across all levels. Note that the sum of all loss weights adds to 1.}}{58}{table.234}%
+\setforeignlanguage {english}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Phoneme Error Rate for each level on 20\% of the training data. `EXP3` performs best by assigning higher weight to levels with more labels (`shidda_or_rakhawa`) and the more challenging `tafkheem_or_tarqeeq` level, without significant differences in the remaining levels.}}{59}{table.236}%
+\setforeignlanguage {english}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Testing results on mosahaf `19.0`, `26.1`, `29.0`, and `30.0` showing a balanced Phoneme Error Rate (PER) across all levels. The `phonemes` level has a naturally higher PER as it is the largest vocabulary (44 tokens: 43 phonemes + 1 padding token).}}{61}{table.239}%
 \addvspace {10\p@ }
 \xpginauxfilefalse 

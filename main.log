@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.8.31)  1 SEP 2025 09:14
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.8.31)  1 SEP 2025 20:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1434,9 +1434,9 @@ LaTeX Info: Redefining \ttfamily on input line 60.
 LaTeX Info: Redefining \rmfamily on input line 81.
 LaTeX Info: Redefining \sffamily on input line 81.
 LaTeX Info: Redefining \ttfamily on input line 81.
-LaTeX Info: Redefining \rmfamily on input line 91.
-LaTeX Info: Redefining \sffamily on input line 91.
-LaTeX Info: Redefining \ttfamily on input line 91.
+LaTeX Info: Redefining \rmfamily on input line 93.
+LaTeX Info: Redefining \sffamily on input line 93.
+LaTeX Info: Redefining \ttfamily on input line 93.
 )
 \tf@toc=\write6
 \openout6 = `main.toc'.
@@ -1517,16 +1517,26 @@ LaTeX Info: Redefining \ttfamily on input line 43.
 LaTeX Info: Redefining \rmfamily on input line 45.
 LaTeX Info: Redefining \sffamily on input line 45.
 LaTeX Info: Redefining \ttfamily on input line 45.
-)
+LaTeX Info: Redefining \rmfamily on input line 47.
+LaTeX Info: Redefining \sffamily on input line 47.
+LaTeX Info: Redefining \ttfamily on input line 47.
+
+Overfull \hbox (41.29062pt too wide) in paragraph at lines 48--48
+ [][]\TU/TimesNewRoman(0)/m/n/10.95 performs best by assigning higher weight to
+ levels with more labels (‘shidda_or_rakhawa‘)[][] 
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 49.
+LaTeX Info: Redefining \sffamily on input line 49.
+LaTeX Info: Redefining \ttfamily on input line 49.
+[19
+
+
+])
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [19
-
-
-] [20
-
-]
+ [20]
 ------------------------------------------------------------------------------
  List of Tables
 ------------------------------------------------------------------------------
@@ -1601,6 +1611,7 @@ LaTeX Info: Redefining \rmfamily on input line 23.
 LaTeX Info: Redefining \sffamily on input line 23.
 LaTeX Info: Redefining \ttfamily on input line 23.
 [21
+
 
 
 ]
@@ -1791,13 +1802,23 @@ LaTeX Info: Redefining \ttfamily on input line 57.
 LaTeX Info: Redefining \rmfamily on input line 58.
 LaTeX Info: Redefining \sffamily on input line 58.
 LaTeX Info: Redefining \ttfamily on input line 58.
-)
+
+Overfull \hbox (8.91072pt too wide) in paragraph at lines 59--59
+ [][]\TU/TimesNewRoman(0)/m/n/10.95 constant across all runs. In each run, we t
+uned the weights for ‘shidda_or_rakhawa‘[][] 
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 60.
+LaTeX Info: Redefining \sffamily on input line 60.
+LaTeX Info: Redefining \ttfamily on input line 60.
+LaTeX Info: Redefining \rmfamily on input line 62.
+LaTeX Info: Redefining \sffamily on input line 62.
+LaTeX Info: Redefining \ttfamily on input line 62.
+[23])
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [23] [24
-
-] (./main.loa)
+ [24] (./main.loa)
 \tf@loa=\write9
 \openout9 = `main.loa'.
 
@@ -1873,6 +1894,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--350
  []
 
 [25
+
 
 
 ] [26
@@ -5419,7 +5441,32 @@ LaTeX Info: Redefining \ttfamily on input line 65.
 LaTeX Info: Redefining \rmfamily on input line 65.
 LaTeX Info: Redefining \sffamily on input line 65.
 LaTeX Info: Redefining \ttfamily on input line 65.
-) (./Chapters/Chapter7.tex [57] [58
+ [57]
+File: ./figures/results_stats_v2.png Graphic file (type bmp)
+<./figures/results_stats_v2.png>
+ [58]
+File: ./figures/eval_v2_plot.png Graphic file (type bmp)
+<./figures/eval_v2_plot.png>
+ [59]
+LaTeX Info: Redefining \rmfamily on input line 186.
+LaTeX Info: Redefining \sffamily on input line 186.
+LaTeX Info: Redefining \ttfamily on input line 186.
+LaTeX Info: Redefining \rmfamily on input line 186.
+LaTeX Info: Redefining \sffamily on input line 186.
+LaTeX Info: Redefining \ttfamily on input line 186.
+LaTeX Info: Redefining \rmfamily on input line 186.
+LaTeX Info: Redefining \sffamily on input line 186.
+LaTeX Info: Redefining \ttfamily on input line 186.
+LaTeX Info: Redefining \rmfamily on input line 186.
+LaTeX Info: Redefining \sffamily on input line 186.
+LaTeX Info: Redefining \ttfamily on input line 186.
+LaTeX Info: Redefining \rmfamily on input line 192.
+LaTeX Info: Redefining \sffamily on input line 192.
+LaTeX Info: Redefining \ttfamily on input line 192.
+LaTeX Info: Redefining \rmfamily on input line 192.
+LaTeX Info: Redefining \sffamily on input line 192.
+LaTeX Info: Redefining \ttfamily on input line 192.
+ [60]) (./Chapters/Chapter7.tex [61] [62
 
 ]
 Chapter 7.
@@ -5462,7 +5509,7 @@ LaTeX Info: Redefining \ttfamily on input line 18.
 LaTeX Info: Redefining \rmfamily on input line 18.
 LaTeX Info: Redefining \sffamily on input line 18.
 LaTeX Info: Redefining \ttfamily on input line 18.
-[59]
+[63]
 LaTeX Info: Redefining \rmfamily on input line 28.
 LaTeX Info: Redefining \sffamily on input line 28.
 LaTeX Info: Redefining \ttfamily on input line 28.
@@ -5472,7 +5519,7 @@ LaTeX Info: Redefining \ttfamily on input line 29.
 LaTeX Info: Redefining \rmfamily on input line 29.
 LaTeX Info: Redefining \sffamily on input line 29.
 LaTeX Info: Redefining \ttfamily on input line 29.
-) [60] (./main.bbl
+) [64] (./main.bbl
 ! Misplaced alignment tab character &.
 <argument> ...arning and Technology Conference (L&
                                                   T)
@@ -5485,10 +5532,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[61
+[65
 
 
-] [62]
+] [66]
 LaTeX Info: Redefining \rmfamily on input line 185.
 LaTeX Info: Redefining \sffamily on input line 185.
 LaTeX Info: Redefining \ttfamily on input line 185.
@@ -5623,7 +5670,7 @@ LaTeX Info: Redefining \ttfamily on input line 230.
 LaTeX Info: Redefining \rmfamily on input line 231.
 LaTeX Info: Redefining \sffamily on input line 231.
 LaTeX Info: Redefining \ttfamily on input line 231.
-[63]) (./summary_arabic.tex [64]
+[67]) (./summary_arabic.tex [68]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\textarabic' on input line 6.
@@ -5639,7 +5686,7 @@ LaTeX Info: Redefining \ttfamily on input line 22.
  [][][] 
  []
 
-) [65
+) [69
 
 ] (./main.aux)
  ***********
@@ -5657,17 +5704,17 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 28807E3FC68C7C5DA38D07C65030F18D;19777.
+(rerunfilecheck)             Checksum: C813630D557E12BD250F0F6162CB3E4E;20101.
 runsystem(rm main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 25863 strings out of 474878
- 502281 string characters out of 5762516
+ 25889 strings out of 474878
+ 502972 string characters out of 5762516
  1947627 words of memory out of 5000000
- 47285 multiletter control sequences out of 15000+600000
+ 47309 multiletter control sequences out of 15000+600000
  566429 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  75i,12n,99p,1217b,1198s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (91 pages).
+Output written on main.pdf (95 pages).

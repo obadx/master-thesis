@@ -44,5 +44,9 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Gradio Web App interface allowing users to test our model.}}{56}{figure.caption.231}%
 \setforeignlanguage {english}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Gradio Web App interface showing detailed Sifat (attribute) level feedback.}}{57}{figure.caption.232}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Average Phoneme Error Rate and Standard Deviation for all three runs. `EXP3` performs best by assigning higher weight to levels with more labels (`shidda_or_rakhawa`) and the more challenging `tafkheem_or_tarqeeq` level, without significant differences in the remaining levels.}}{59}{figure.caption.235}%
+\setforeignlanguage {english}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Evaluation PER during training steps}}{60}{figure.caption.237}%
 \addvspace {10\p@ }
 \xpginauxfilefalse 

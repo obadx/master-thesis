@@ -419,13 +419,42 @@
 \@writefile{lot}{\setforeignlanguage {english}}
 \@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Gradio Web App interface showing detailed Sifat (attribute) level feedback.}}{57}{figure.caption.232}\protected@file@percent }
 \newlabel{fig:gradio_sifa}{{6.2}{57}{Gradio Web App interface showing detailed Sifat (attribute) level feedback}{figure.caption.232}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Conclusion}{59}{chapter.233}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Ablation Studies}{57}{section.233}\protected@file@percent }
+\gdef \LT@xxiv {\LT@entry 
+    {3}{105.82686pt}\LT@entry 
+    {1}{39.77501pt}\LT@entry 
+    {3}{53.4625pt}\LT@entry 
+    {3}{53.4625pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.2}{\ignorespaces The table above shows different loss weights applied to equation \ref {eq:multilevel_ctc} for three experiments: `EXP1`, `EXP2`, and `EXP3`. The `phonemes` level weight was kept constant across all runs. In each run, we tuned the weights for `shidda_or_rakhawa` and `tafkheem_or_tarqeeq` to minimize the average Phoneme Error Rate (PER) and the standard deviation across all levels. Note that the sum of all loss weights adds to 1.}}{58}{table.234}\protected@file@percent }
+\newlabel{tab:results_v2_weights}{{6.2}{58}{The table above shows different loss weights applied to equation \ref {eq:multilevel_ctc} for three experiments: `EXP1`, `EXP2`, and `EXP3`. The `phonemes` level weight was kept constant across all runs. In each run, we tuned the weights for `shidda_or_rakhawa` and `tafkheem_or_tarqeeq` to minimize the average Phoneme Error Rate (PER) and the standard deviation across all levels. Note that the sum of all loss weights adds to 1}{table.234}{}}
+\gdef \LT@xxv {\LT@entry 
+    {3}{105.82686pt}\LT@entry 
+    {3}{58.9375pt}\LT@entry 
+    {3}{47.9875pt}\LT@entry 
+    {3}{53.4625pt}}
+\@writefile{lof}{\setforeignlanguage {english}}
+\@writefile{lot}{\setforeignlanguage {english}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Average Phoneme Error Rate and Standard Deviation for all three runs. `EXP3` performs best by assigning higher weight to levels with more labels (`shidda_or_rakhawa`) and the more challenging `tafkheem_or_tarqeeq` level, without significant differences in the remaining levels.}}{59}{figure.caption.235}\protected@file@percent }
+\newlabel{fig:results_v2_std}{{6.3}{59}{Average Phoneme Error Rate and Standard Deviation for all three runs. `EXP3` performs best by assigning higher weight to levels with more labels (`shidda_or_rakhawa`) and the more challenging `tafkheem_or_tarqeeq` level, without significant differences in the remaining levels}{figure.caption.235}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.3}{\ignorespaces Phoneme Error Rate for each level on 20\% of the training data. `EXP3` performs best by assigning higher weight to levels with more labels (`shidda_or_rakhawa`) and the more challenging `tafkheem_or_tarqeeq` level, without significant differences in the remaining levels.}}{59}{table.236}\protected@file@percent }
+\newlabel{tab:results_v2}{{6.3}{59}{Phoneme Error Rate for each level on 20\% of the training data. `EXP3` performs best by assigning higher weight to levels with more labels (`shidda_or_rakhawa`) and the more challenging `tafkheem_or_tarqeeq` level, without significant differences in the remaining levels}{table.236}{}}
+\@writefile{lof}{\setforeignlanguage {english}}
+\@writefile{lot}{\setforeignlanguage {english}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces Evaluation PER during training steps}}{60}{figure.caption.237}\protected@file@percent }
+\newlabel{fig:eval_plot}{{6.4}{60}{Evaluation PER during training steps}{figure.caption.237}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Model Version 3}{60}{section.238}\protected@file@percent }
+\gdef \LT@xxvi {\LT@entry 
+    {3}{121.637pt}\LT@entry 
+    {3}{47.9875pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {6.4}{\ignorespaces Testing results on mosahaf `19.0`, `26.1`, `29.0`, and `30.0` showing a balanced Phoneme Error Rate (PER) across all levels. The `phonemes` level has a naturally higher PER as it is the largest vocabulary (44 tokens: 43 phonemes + 1 padding token).}}{61}{table.239}\protected@file@percent }
+\newlabel{tab:results_v3}{{6.4}{61}{Testing results on mosahaf `19.0`, `26.1`, `29.0`, and `30.0` showing a balanced Phoneme Error Rate (PER) across all levels. The `phonemes` level has a naturally higher PER as it is the largest vocabulary (44 tokens: 43 phonemes + 1 padding token)}{table.239}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Conclusion}{63}{chapter.240}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{Chapter7}{{7}{59}{Conclusion}{chapter.233}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Limitations}{59}{section.235}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}Future Work}{59}{section.236}\protected@file@percent }
+\newlabel{Chapter7}{{7}{63}{Conclusion}{chapter.240}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Limitations}{63}{section.242}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Future Work}{63}{section.243}\protected@file@percent }
 \@writefile{toc}{\vspace  {2em}}
 \bibstyle{unsrtnat}
 \bibdata{Bibliography}
@@ -440,8 +469,8 @@
 \bibcite{khan2021tarteel}{{9}{2021}{{Khan et~al.}}{{Khan, Abid, Moussa, and Abou-Allaban}}}
 \bibcite{tarteelai}{{10}{2023}{{Tarteel AI}}{{}}}
 \bibcite{kheir2025towards}{{11}{2025}{{Kheir et~al.}}{{Kheir, Ibrahim, Meghanani, Almarwani, Toyin, Alharbi, Alfadly, Alkanhal, Selim, Elbatal, et~al.}}}
-\newlabel{Bibliography}{{7.2}{61}{Future Work}{Item.239}{}}
-\@writefile{toc}{\contentsline {chapter}{References}{61}{dummy.241}\protected@file@percent }
+\newlabel{Bibliography}{{7.2}{65}{Future Work}{Item.246}{}}
+\@writefile{toc}{\contentsline {chapter}{References}{65}{dummy.248}\protected@file@percent }
 \bibcite{mohammed2017recognition}{{12}{2017}{{Mohammed et~al.}}{{Mohammed, Sunar, and Salam}}}
 \bibcite{alqadasi2023improving}{{13}{2023}{{Alqadasi et~al.}}{{Alqadasi, Zeki, Sunar, Salam, Abdulghafor, and Khaled}}}
 \bibcite{10485145}{{14}{2024}{{Alsahafi and Asad}}{{}}}
@@ -473,8 +502,8 @@
 \gdef\minted@oldcachelist{,
   default.pygstyle,
   0FE48A09D0904A7033ECAF90113A98A6CFD1478597B1C0004BE521A4A74E56AC.pygtex}
-\@writefile{toc}{\contentsline {chapter}{\textarabic {الملخص}}{65}{dummy.244}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\textarabic {الملخص}}{69}{dummy.251}\protected@file@percent }
 \@writefile{toc}{\xpginauxfilefalse }
 \@writefile{lof}{\xpginauxfilefalse }
 \@writefile{lot}{\xpginauxfilefalse }
-\gdef \@abspage@last{91}
+\gdef \@abspage@last{95}
